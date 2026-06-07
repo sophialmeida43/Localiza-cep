@@ -1,16 +1,51 @@
-# React + Vite
+# CEP Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação desenvolvida em React para consulta de endereços através da API ViaCEP.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Consulta de endereços por CEP
+* Integração com a API ViaCEP
+* Validação de CEP com 8 dígitos
+* Exibição de logradouro, bairro, cidade e estado
+* Tratamento de CEP inválido ou não encontrado
+* Interface construída com React Bootstrap
 
-## React Compiler
+## Tecnologias Utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React
+* Vite
+* JavaScript
+* React Bootstrap
+* API ViaCEP
 
-## Expanding the ESLint configuration
+## Como Executar
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone o repositório:
+
+```bash
+git clone URL_DO_REPOSITORIO
+```
+
+2. Acesse a pasta do projeto:
+
+```bash
+cd cep-explorer
+```
+
+3. Instale as dependências:
+
+```bash
+npm install
+```
+
+4. Execute o projeto:
+
+```bash
+npm run dev
+```
+
+## Objetivo
+
+Este projeto foi desenvolvido com foco no aprendizado de consumo de APIs REST, gerenciamento de estado com React Hooks, validação de dados e construção de interfaces web modernas.
+
