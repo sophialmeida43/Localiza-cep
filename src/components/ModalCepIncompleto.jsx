@@ -12,7 +12,7 @@ function ModalCepIncompleto({ show, onClose }) {
 
         <p>
           O campo deve conter exatamente
-          <strong>8 dígitos</strong>
+          <strong> 8 dígitos </strong>
           numéricos para realizar a pesquisa.
         </p>
       </Modal.Body>

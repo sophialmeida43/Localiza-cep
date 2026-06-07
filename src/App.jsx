@@ -20,8 +20,6 @@ function App() {
   const buscarEndereco = () => {
   if (cep.length !== 8) {
 
-    alert("Digite o CEP com 8 dígitos para pesquisa");
-
     setShowModalIncompleto(true);
 
     setEndereco({
@@ -58,7 +56,7 @@ function App() {
  return (
   <div className="app-background">
     <Container className="consulta-card">
-      <h1 className="titulo">Consulta de CEP</h1>
+      <h1 className="titulo">🔎 Consulta de CEP</h1>
       <p className="subtitulo">
         Consulte rapidamente informações de endereço através do CEP.
       </p>

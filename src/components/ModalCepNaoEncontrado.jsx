@@ -8,8 +8,8 @@ function ModalCepNaoEncontrado({ show, onClose }) {
       </Modal.Header>
 
       <Modal.Body>
-        <p>O CEP digitado não foi encontrado na base de dados.</p>
-        <p>Por favor, verifique o número e tente novamente.</p>
+        <p>O CEP digitado não foi encontrado na base de dados.
+          Por favor, verifique o número e tente novamente.</p>
       </Modal.Body>
 
       <Modal.Footer>
