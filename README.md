@@ -1,51 +1,137 @@
-# CEP Explorer
+# 🔍 Localiza CEP
 
-Aplicação desenvolvida em React para consulta de endereços através da API ViaCEP.
+Aplicação Front-End desenvolvida com **React, Vite e JavaScript**, responsável por realizar consultas de endereços através da API ViaCEP.
 
-## Funcionalidades
+O sistema permite que o usuário informe um CEP válido e obtenha informações detalhadas do endereço correspondente, incluindo logradouro, bairro, cidade e estado.
 
-* Consulta de endereços por CEP
-* Integração com a API ViaCEP
-* Validação de CEP com 8 dígitos
-* Exibição de logradouro, bairro, cidade e estado
-* Tratamento de CEP inválido ou não encontrado
-* Interface construída com React Bootstrap
+O projeto foi desenvolvido com foco na prática de conceitos fundamentais do ecossistema React, consumo de APIs REST, gerenciamento de estado e construção de interfaces responsivas utilizando CSS puro.
 
-## Tecnologias Utilizadas
+---
+
+# 🚀 Tecnologias Utilizadas
 
 * React
 * Vite
-* JavaScript
-* React Bootstrap
+* JavaScript (ES6+)
+* CSS
 * API ViaCEP
 
-## Como Executar
+---
 
-1. Clone o repositório:
+# 🧠 Arquitetura da Aplicação
 
-```bash
-git clone URL_DO_REPOSITORIO
+A aplicação foi estruturada utilizando componentização para promover reutilização de código, organização e facilidade de manutenção.
+
+```text
+src
+│
+├── components
+│   ├── ModalCepIncompleto.jsx
+│   └── ModalCepNaoEncontrado.jsx
+│
+├── App.jsx
+├── App.css
+└── main.jsx
 ```
 
-2. Acesse a pasta do projeto:
+---
 
-```bash
-cd cep-explorer
+### 🎯 Objetivo da Arquitetura
+
+* Separação de responsabilidades
+* Reutilização de componentes
+* Melhor organização do código
+* Facilidade de manutenção
+* Escalabilidade da aplicação
+
+---
+
+# 📌 Funcionalidades
+
+* Consulta de CEP através da API ViaCEP
+* Busca assíncrona de dados
+* Exibição automática de endereço
+* Validação de CEP informado
+* Tratamento de CEP incompleto
+* Tratamento de CEP inexistente
+* Exibição de mensagens de erro através de modais
+* Interface responsiva para diferentes dispositivos
+
+---
+
+# 🔄 Fluxo da Aplicação
+
+```text
+Usuário informa o CEP
+          ↓
+Validação dos dados informados
+          ↓
+Requisição para API ViaCEP
+          ↓
+Processamento da resposta
+          ↓
+Exibição dos dados do endereço
 ```
 
-3. Instale as dependências:
+---
 
-```bash
-npm install
+# 🌐 Integração com API
+
+A aplicação consome a API pública ViaCEP através de requisições HTTP utilizando JavaScript.
+
+Exemplo de consulta:
+
+```http
+https://viacep.com.br/ws/01001000/json/
 ```
 
-4. Execute o projeto:
+Dados retornados pela API:
 
-```bash
-npm run dev
+```json
+{
+  "cep": "01001-000",
+  "logradouro": "Praça da Sé",
+  "bairro": "Sé",
+  "localidade": "São Paulo",
+  "uf": "SP"
+}
 ```
 
-## Objetivo
+---
 
-Este projeto foi desenvolvido com foco no aprendizado de consumo de APIs REST, gerenciamento de estado com React Hooks, validação de dados e construção de interfaces web modernas.
+# 🎨 Interface e Estilização
 
+Toda a camada visual da aplicação foi desenvolvida utilizando **CSS puro**, sem utilização de frameworks de estilização.
+
+O design foi construído com foco em:
+
+* Simplicidade
+* Legibilidade
+* Organização visual
+* Experiência do usuário
+* Responsividade
+
+---
+
+# 🎯 Objetivos do Projeto
+
+* Aplicar conceitos de React
+* Praticar componentização
+* Consumir APIs REST
+* Trabalhar com estados e eventos
+* Implementar validações de entrada
+* Desenvolver interfaces responsivas
+* Organizar projetos Front-End
+* Realizar deploy utilizando GitHub Pages
+
+---
+
+# 🌐 Demonstração
+
+🔗 Acesse o projeto:
+
+---
+
+# 👩🏾‍💻 Desenvolvido por
+
+**Sophia Almeida**
