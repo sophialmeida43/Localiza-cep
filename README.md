@@ -128,7 +128,7 @@ O design foi construído com foco em:
 
 # 🌐 Demonstração
 
-🔗 Acesse o projeto:
+🔗 Acesse o projeto: https://sophialmeida43.github.io/Localiza-cep/
 
 ---
 
